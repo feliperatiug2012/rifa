@@ -11,6 +11,9 @@ const app = express();
 app.use(json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.status(200).send('API is working');
+});
 
 app.get('/api/numbers', async (req, res) => {
     const numbers = await getAllUserData();
