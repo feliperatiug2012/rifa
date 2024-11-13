@@ -19,16 +19,7 @@ export default function Rifa() {
   const [sellerName, setSellerName] = useState('');
   
   const personNames = [
-      { name: 'Alice', numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
-      { name: 'Bob', numbers: [11, 12, 13, 14, 15, 16, 17, 18, 19, 20] },
-      { name: 'Charlie', numbers: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30] },
-      { name: 'David', numbers: [31, 32, 33, 34, 35, 36, 37, 38, 39, 40] },
-      { name: 'Eve', numbers: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50] },
-      { name: 'Frank', numbers: [51, 52, 53, 54, 55, 56, 57, 58, 59, 60] },
-      { name: 'Grace', numbers: [61, 62, 63, 64, 65, 66, 67, 68, 69, 70] },
-      { name: 'Hannah', numbers: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80] },
-      { name: 'Isaac', numbers: [81, 82, 83, 84, 85, 86, 87, 88, 89, 90] },
-      { name: 'Julia', numbers: [91, 92, 93, 94, 95, 96, 97, 98, 99, 100] },
+      { name: 'Atletica Categoría 2014', numbers: Array.from({ length: 100 }, (_, i) => i + 1) }
   ];
   
   useEffect(() => {
@@ -90,7 +81,7 @@ export default function Rifa() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 flex justify-center items-center min-h-screen">
       <div className="text-center mb-6 md:mb-8">
         <Image
           src="/Logo_Atletico.png"
