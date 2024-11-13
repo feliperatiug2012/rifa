@@ -91,7 +91,7 @@ export default function Rifa() {
           className="mx-auto mb-3 md:mb-4 md:w-[100px] md:h-[100px]"
         />
         <h1 className="text-2xl md:text-3xl font-bold mb-2">Gran Rifa - Atletico Independiente - Categoría 2013-2014</h1>
-        <p className="text-lg md:text-xl text-muted-foreground">¡Gana una genial ancheta y un expectacular balón de futbol!, selecciona tu número favorito y participa por solo $10.000</p>
+        <p className="text-lg md:text-xl text-muted-foreground">Profondo Torneo Nacional de Futbol Chinauta - ¡Gana una genial ancheta y un expectacular balón de futbol!, selecciona tu número favorito y participa por solo $10.000</p>
       </div>
 
       <div className="items-center grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-4">
