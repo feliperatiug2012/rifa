@@ -19,7 +19,7 @@ export default function Rifa() {
   const [sellerName, setSellerName] = useState('');
   
   const personNames = [
-      { name: 'Atletica Categoría 2014', numbers: Array.from({ length: 100 }, (_, i) => i + 1) }
+      { name: 'Atlético Categoría 2014', numbers: Array.from({ length: 100 }, (_, i) => i + 1) }
   ];
   
   useEffect(() => {
@@ -81,7 +81,7 @@ export default function Rifa() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 flex justify-center items-center min-h-screen">
+    <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-6 md:mb-8">
         <Image
           src="/Logo_Atletico.png"
@@ -94,7 +94,7 @@ export default function Rifa() {
         <p className="text-lg md:text-xl text-muted-foreground">¡Gana una genial ancheta y un expectacular balón de futbol!, selecciona tu número favorito y participa por solo $10.000</p>
       </div>
 
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-4">
+      <div className="items-center grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-4">
         {
           numbers.length >= 1 ?
             Array.from({ length: 100 }, (_, i) => i + 1).map((number) => {
@@ -150,6 +150,7 @@ export default function Rifa() {
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 className="col-span-3"
                 required
+                type="number"
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
