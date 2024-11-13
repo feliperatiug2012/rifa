@@ -34,7 +34,7 @@ export default function Rifa() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/numbers');
+        const response = await fetch('https://rifa-api-rho.vercel.app/api/numbers');
         const data = await response.json();
         setNumbers(data)
       } catch (error) {
@@ -64,7 +64,7 @@ export default function Rifa() {
       let data = {};
       setButtonDisabled(true);
       try {
-        const response = await fetch('http://localhost:3001/api/numbers', {
+        const response = await fetch('https://rifa-api-rho.vercel.app/api/numbers', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
